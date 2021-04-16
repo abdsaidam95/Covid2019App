@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Covid19 App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_corona">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+
+The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
+
+The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</string>
+
+    <string name="menu_home">Home</string>
+    <string name="estimate_virous">Worldometer has analyzed the data provided by New York City, the New York State antibody study, and the excess deaths analysis by the CDC. Combining these 3 sources together we can derive the most accurate estimate to date on the mortality rate for COVID-19, as well as the mortality rate by age group and underlying condition. These findings can be valid for New York City and not necessarily for other places (suburban or rural areas, other countries, etc.), but they represent the best estimates to date given the co-occurrence of these 3 studies.</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="advice_virous">    Clean your hands often
+    Cough or sneeze in your bent elbow - not your hands!
+    Avoid touching your eyes, nose and mouth
+    Limit social gatherings and time spent in crowded places
+    Avoid close contact with someone who is sick
+    Clean and disinfect frequently touched objects and surfaces
+
+ </string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

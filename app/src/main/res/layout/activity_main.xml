@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar_layout"
+            app:layout_constraintTop_toTopOf="parent"></include>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAbout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2">
+
+                <TextView
+                    android:id="@+id/convidText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="About Convid19"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_24sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEstamation"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="@+id/cardAbout"
+                app:layout_constraintStart_toStartOf="@+id/cardAbout"
+                app:layout_constraintTop_toBottomOf="@+id/cardAbout"
+                app:layout_constraintVertical_bias="0.1">
+
+                <TextView
+                    android:id="@+id/EstimatedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Estimated Convid19"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_24sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAdvice"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="@+id/cardAbout"
+                app:layout_constraintStart_toStartOf="@+id/cardAbout"
+                app:layout_constraintTop_toBottomOf="@+id/cardEstamation"
+                app:layout_constraintVertical_bias="0.1">
+
+                <TextView
+                    android:id="@+id/AdviceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Advice Convid19"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_24sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChat"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_4sdp"
+                android:text="Chat"
+                app:layout_constraintEnd_toEndOf="@+id/cardAbout"
+                app:layout_constraintStart_toStartOf="@+id/cardAbout"
+                app:layout_constraintTop_toBottomOf="@+id/cardAdvice"
+                app:layout_constraintVertical_bias="0.1">
+
+                <TextView
+                    android:id="@+id/ChatText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Chat"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_24sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
